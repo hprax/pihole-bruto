@@ -14,7 +14,8 @@ tar -xvzf cloudflared-stable-linux-arm.tgz
 cp ./cloudflared /usr/local/bin
 chmod +x /usr/local/bin/cloudflared
 # command to check version / issues "cloudflared -v"
-
+echo "Installed CloudFlared Version"
+/usr/local/bin/cloudflared -v
 #add cloudflared user
 echo "Adding the cloudflared user and initial config"
 useradd -s /usr/sbin/nologin -r -M cloudflared
