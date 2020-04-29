@@ -3,11 +3,11 @@ Instructions to setup a Raspberry Pi running PiHole + DoH
 
 Overview:
 
-> 1 - Raspberry Pi (3B+ or 4) - ** Pt_BR ** se vc for um arrombado mao de vaca, um Pi zero ou 2 funciona (mas beeemm lento) **/PT_BR**
-> 2 - Raspbian (base OS)
-> 3 - Cloudflared - DoH (Dns over HTTPS)
-> 4 - Pihole
-> 5 - Network settings / changes 
+> 1. Raspberry Pi (3B+ or 4) - ** Pt_BR ** se vc for um arrombado mao de vaca, um Pi zero ou 2 funciona (mas beeemm lento) **/PT_BR**
+> 2. Raspbian (base OS)
+> 3.  Cloudflared - DoH (Dns over HTTPS)
+> 4.  Pihole
+> 5.  Network settings / changes 
 
  
 
