@@ -21,3 +21,4 @@ Instructions to setup a Raspberry Pi running PiHole + DoH
   - If using Wifi (Not recommended for your Network DNS server) you need to setup the wpa_supplicant.conf (example in the repo)
   - Enable ssh access - add a file named "ssh" to the boot directory (mount the SD)
   
+TEST
