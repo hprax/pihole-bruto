@@ -1,7 +1,3 @@
----
-typora-root-url: ./imgs/pi_settings.png
----
-
 # pihole-bruto
 Instructions to setup a Raspberry Pi running PiHole + DoH
 
