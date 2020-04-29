@@ -12,3 +12,11 @@ tar -xvzf cloudflared-stable-linux-arm.tgz
 sudo cp ./cloudflared /usr/local/bin
 sudo chmod +x /usr/local/bin/cloudflared
 # command to check version / issues "cloudflared -v"
+
+#add cloudflared user
+sudo useradd -s /usr/sbin/nologin -r -M cloudflared
+# add the config
+sudo echo "CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query" > /etc/default/cloudflared
+#fix permissions
+sudo chown cloudflared:cloudflared /etc/default/cloudflared
+sudo chown cloudflared:cloudflared /usr/local/bin/cloudflared
