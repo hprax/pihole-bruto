@@ -29,6 +29,6 @@ wget "https://raw.githubusercontent.com/hprax/pihole-bruto/master/install/cloudf
 cp ./cloudflared.service /etc/systemd/system/
 
 #creating service and enabling it
-#systemctl enable cloudflared
-#systemctl start cloudflared
-#systemctl status cloudflared
+systemctl enable cloudflared
+systemctl start cloudflared
+systemctl status cloudflared
