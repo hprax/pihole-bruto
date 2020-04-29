@@ -17,6 +17,7 @@ Overview:
 
   
 2 - Raspbian
+
 	- Download and install the balenaEtcher - https://www.balena.io/etcher/
 	- Download the latest raspbian image (Lite version) - https://www.raspberrypi.org/downloads/raspbian/
 	- "Burn" the img to the SD card with Balena Etcher
@@ -28,16 +29,18 @@ Overview:
 3 - CloudFlared
 
 	CloudFlared is a Opensource DoH client recommended by CloudFlare, this client will be used as a proxy to perform the DNS requests 
+
 		*Automatic Install*
 		Copy and run the following command
-			```
+
+			
 			curl -sSL https://raw.githubusercontent.com/hprax/pihole-bruto/master/install/install_cloudflared | sudo bash
-			```
+			
 
 		*Manual Install* (Basically a copy and paste of the previous install script)
 
 		Creating the temp folder
-		```
+	
 		mkdir /tmp/bruto_temp
 		cd /tmp/bruto_temp/
-		```
+		
