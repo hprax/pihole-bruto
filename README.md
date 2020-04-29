@@ -1,3 +1,7 @@
+---
+typora-root-url: ./imgs/pi_settings.png
+---
+
 # pihole-bruto
 Instructions to setup a Raspberry Pi running PiHole + DoH
 
@@ -67,3 +71,22 @@ curl -sSL https://raw.githubusercontent.com/hprax/pihole-bruto/master/install/in
    ```
 
    
+
+
+
+**4 - PiHole**
+
+run the magic command and follow the instructions
+
+```bash
+curl -sSL https://install.pi-hole.net | sudo bash
+```
+
+​	
+
+4.1 - PiHole configuration
+
+Log into Pihole and change the Upstream DNS settings. This config could be found under  "Settings" => "Network".
+
+![PiHole Settings](https://github.com/hprax/pihole-bruto/blob/master/imgs/pi_settings.png?raw=true)
+
