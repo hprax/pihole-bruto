@@ -23,3 +23,4 @@ Overview:
 	- If using Wifi (Not recommended for your Network DNS server) you need to setup the wpa_supplicant.conf (sample into the "boot" folder of the repo)
 	- Enable ssh access - add a file named "ssh" to the boot directory (mount the SD in your computer) (sample into the "boot" folder of the repo)
   
+

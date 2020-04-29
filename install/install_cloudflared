@@ -4,19 +4,31 @@ cd /tmp
 mkdir bruto_temp
 cd /tmp/bruto_temp/
 #Download Cloudflared for Pi
-wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
+echo "Downloading the lastes Cloudflared binary"
+wget "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz"
 #extract
+echo "Extracting the binary and moving to the right place"
 tar -xvzf cloudflared-stable-linux-arm.tgz
 
 #move binary to the right place
-sudo cp ./cloudflared /usr/local/bin
-sudo chmod +x /usr/local/bin/cloudflared
+cp ./cloudflared /usr/local/bin
+chmod +x /usr/local/bin/cloudflared
 # command to check version / issues "cloudflared -v"
 
 #add cloudflared user
-sudo useradd -s /usr/sbin/nologin -r -M cloudflared
+echo "Adding the cloudflared user and initial config"
+useradd -s /usr/sbin/nologin -r -M cloudflared
 # add the config
-sudo echo "CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query" > /etc/default/cloudflared
+echo "CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query" > /etc/default/cloudflared
 #fix permissions
-sudo chown cloudflared:cloudflared /etc/default/cloudflared
-sudo chown cloudflared:cloudflared /usr/local/bin/cloudflared
+chown cloudflared:cloudflared /etc/default/cloudflared
+chown cloudflared:cloudflared /usr/local/bin/cloudflared
+echo "Installing the CloudFlared Service"
+#get config
+wget "https://raw.githubusercontent.com/hprax/pihole-bruto/master/install/cloudflared.service"
+cp ./cloudflared.service /etc/systemd/system/
+
+#creating service and enabling it
+#systemctl enable cloudflared
+#systemctl start cloudflared
+#systemctl status cloudflared
