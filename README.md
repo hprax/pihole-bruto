@@ -6,7 +6,7 @@ Steps Needed
  2 - Raspbian (base OS)
  3 - Cloudflared - DoH (Dns over HTTPS)
  4 - Pihole
- 5 - Network settings / changes
+ 5 - Network settings / changes 
  
  
 1 - Raspberry Pi
