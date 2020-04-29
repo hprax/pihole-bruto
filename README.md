@@ -1,7 +1,7 @@
 # pihole-bruto
 Instructions to setup a Raspberry Pi running PiHole + DoH
 
-Steps Needed:
+0 - Steps Needed:
  1 - Raspberry Pi (3B+ or 4) - se vc for um arrombado mao de vaca, um Pi zero ou 2 funciona (mas beeemm lento)
  2 - Raspbian (base OS)
  3 - Cloudflared - DoH (Dns over HTTPS)
