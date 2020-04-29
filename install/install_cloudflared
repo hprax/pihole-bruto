@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#Automatic Script to install CloudFlared and perform basic settings 
+cd /tmp
+mkdir bruto_temp
+cd /tmp/bruto_temp/
+#Download Cloudflared for Pi
+wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
+#extract
+tar -xvzf cloudflared-stable-linux-arm.tgz
+
+#move binary to the right place
+sudo cp ./cloudflared /usr/local/bin
+sudo chmod +x /usr/local/bin/cloudflared
+# command to check version / issues "cloudflared -v"
